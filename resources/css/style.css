@@ -85,26 +85,35 @@ header{
 
 /* Main Content */
 #icons{
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
   height: 8rem;
 }
 
 .image{
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 8rem;
+  width: 5rem;
 }
 
 #exam{
   width: 3.5rem;
+}
+
+#fitting, #delivery{
+  width: 5rem;
+}
+
+#exam_div{
   margin-right: 6rem;
 }
 
-#fitting{
-  width: 5rem;
+#fitting_div{
   margin-right: 6rem;
-}
-
-#delivery{
-  width: 5rem;
 }
