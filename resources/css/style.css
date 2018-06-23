@@ -47,12 +47,13 @@ header{
 }
 
 #navigation span{
-  margin-right: 2rem;
+  margin: auto;
 }
 
 #navigation a{
   text-decoration: none;
   color: white;
+  margin-right: 2rem;
 }
 
 #menu{
@@ -226,7 +227,7 @@ footer p {
 }
 
 /* Mobile Target */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 625px){
   header{
     width: 100%;
   }
