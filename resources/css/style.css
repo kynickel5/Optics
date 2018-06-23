@@ -5,9 +5,11 @@
 
 html{
   font-size: 18px;
-  line-height: 1.4;
 }
 
+body{
+  line-height: 1.4;
+}
 /* Header */
 header{
   width: 960px;
@@ -52,6 +54,11 @@ header{
   text-decoration: none;
   color: white;
 }
+
+#menu{
+  display: none;
+}
+
 /* Banner */
 #top{
   height: 30rem;
@@ -141,9 +148,15 @@ header{
   margin-bottom: 1rem;
 }
 
+.info_sec p{
+  font-family: Helvetica;
+}
+
 #philosophy{
   margin-right: 5%;
 }
+
+/* Footer Section */
 
 footer{
   margin-left: 4rem;
@@ -164,4 +177,154 @@ footer img{
 
 footer p {
   display: inline-block;
+}
+
+/* Tablet Target */
+@media only screen and (min-width: 451px) and (max-width: 1000px){
+  header{
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+
+  nav{
+    height: 100%;
+  }
+
+  nav a{
+    margin: auto 0;
+  }
+
+  #top{
+    height: 22rem;
+    width: 100%;
+  }
+
+  #menu{
+    display: none;
+  }
+
+  #banner{
+    margin: 0 auto;
+    margin-right: 4rem;
+    position: relative;
+    top: 5rem;
+    width: auto;
+  }
+
+  #banner h1{
+    display: inline-block;
+    font-size: 1.33rem;
+    padding: .75rem 4rem;
+  }
+
+  footer{
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 4rem;
+  }
+}
+
+/* Mobile Target */
+@media only screen and (max-width: 600px){
+  header{
+    width: 100%;
+  }
+
+  nav a{
+    margin: auto 0;
+  }
+
+  #logo h3{
+    display: none;
+  }
+
+  #top{
+    height: 17rem;
+    background-position: 20%
+  }
+
+  #menu{
+    display: inline-block;
+  }
+
+  .nl{
+    display: none;
+  }
+
+  #banner{
+    margin: 0 auto;
+    position: relative;
+    top: 9rem;
+    width: 100%;
+  }
+
+  #banner h1{
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+    right: 0;
+    width: 100%;
+  }
+
+  #icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+    height: auto;
+  }
+
+  #icons h5{
+    font-family: Helvetica;
+    font-size: 0.77rem;
+  }
+
+  #exam_div, #fitting_div{
+    margin-right: 0;
+  }
+
+  .image{
+    margin-bottom: 1.54rem;
+    height: auto;
+  }
+
+  .image img{
+    margin-bottom: 1.54rem;
+  }
+
+  #info{
+    flex-direction: column;
+  }
+
+  .info_sec{
+    width: 100%;
+  }
+
+  .info_sec h3{
+    width: 100%;
+    text-align: center;
+  }
+
+  .info_sec p{
+    margin-bottom: 4rem;
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    margin-left: .5rem;
+  }
+
+  footer{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  footer img{
+    margin: auto;
+  }
+
+  footer p{
+    display: none;
+  }
 }
